@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>DXO社内ポータル</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #f0f0f0, #ffffff);
+    }
+
+    .hero img {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+
+    .news {
+      padding: 40px 20px;
+    }
+
+    .news h3 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .news ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .news li {
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px dotted #ccc;
+      padding: 10px 0;
+    }
+
+    .news span:nth-child(2) {
+      background: #eee;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .news a {
+      display: block;
+      width: fit-content;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #9de3c4, #a8a7e0);
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-weight: bold;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(to right, #1d2b40, #3b4754);
+      color: #fff;
+      padding: 40px 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-left img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .footer-menus {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #999;
+      padding-bottom: 5px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .footer-menus {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="DXOロゴ">
+      <span>社内ポータル</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">ポリシー</a></li>
+        <li><a href="#">お知らせ</a></li>
+        <li><a href="#">社員紹介</a></li>
+        <li><a href="#">社内報</a></li>
+        <li><a href="#">問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="hero">
+    <h2>「見ればわかる、つながる、ひらめく。」</h2>
+    <p>― 社内ポータルサイト ―</p>
+    <img src="mainvisual.jpg" alt="DXO株式会社ロゴ画像">
+  </section>
+
+  <!-- お知らせ一覧 -->
+  <section class="news">
+    <h3>お知らせ</h3>
+    <ul>
+      <li><span>2023/01/01</span><span>コーポレート</span><span>ここにテキストが入りますここにテキストが入ります</span></li>
+      <li><span>2023/01/01</span><span>お知らせ</span><span>ここにテキストが入りますここにテキストが入ります</span></li>
+      <li><span>2023/01/01</span><span>お知らせ</span><span>ここにテキストが入りますここにテキストが入ります</span></li>
+      <li><span>2023/01/01</span><span>社内報</span><span>ここにテキストが入りますここにテキストが入ります</span></li>
+      <li><span>2023/01/01</span><span>コーポレート</span><span>ここにテキストが入りますここにテキストが入ります</span></li>
+    </ul>
+    <a href="#">お知らせ一覧</a>
+  </section>
+
+  <!-- カードリンク -->
+  <section class="cards">
+    <div class="card">
+      <img src="employee.jpg" alt="社員紹介">
+      <p>社員紹介</p>
+    </div>
+    <div class="card">
+      <img src="internal.jpg" alt="社内報">
+      <p>社内報</p>
+    </div>
+    <div class="card">
+      <img src="portal.jpg" alt="DXO社内ポータルとは">
+      <p>DXO社内ポータルとは</p>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer-left">
+      <img src="logo.png" alt="ロゴ">
+      <p>DXO, Inc.</p>
+    </div>
+    <div class="footer-menus">
+      <div class="footer-column">
+        <h4>ポリシー</h4>
+        <ul>
+          <li>企業理念</li>
+          <li>サイトコンセプト</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>社員紹介</h4>
+        <ul>
+          <li>介護事業本部</li>
+          <li>IT&マーケティング事業本部</li>
+          <li>セールスフォワード事業本部</li>
+          <li>人事総務本部</li>
+          <li>経理財務本部</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>その他</h4>
+        <ul>
+          <li>問い合わせ</li>
+          <li>社内規定一覧</li>
+          <li>便利なリンク集</li>
+          <li>プロフィール更新依頼</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
