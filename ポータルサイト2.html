@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
+
     <head>
         <meta charset="UTF-8">
         <title>DXO社内ポータルサイト</title>
     </head>
 
+
+    <body>
     <style>
 
-        /* ヘッダー →画像に差し替えたので調整 */
+        /* 全体 */
+        body {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ヘッダー */
         header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 40px;
-        background: white;
-        border-top: 2px solid grey;
-        border-image-slice: 1;
-        }
-
-        header img[alt="ロゴ画像"] {
-        height: 32px;
-        }
-
-        header ul {
-        display: flex;
-        list-style: none;
-        gap: 40px;
-        margin: 0;
-        padding: 0;
-        }
-
-        header ul li {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        font-weight: bold;
-        color: #333;
-        }
-
-        header ul li img {
-        height: 20px;
-        margin-right: 8px;
-        vertical-align: middle;
-        }
-
-
-
-        /* キービジュアル（ヒーロー）→画像挿入したので背景カラー削除、サイズ調整 */
-        .hero {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            /* padding・marginで微調整 */
+            padding: 10px 40px;
+            background: white;
+            border-top: 2px solid grey;
+        }
+
+        header img[alt="ロゴ画像"] {
+            display: flex;
+            width: 120px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            padding-left: 30px
+        }
+
+        .nav-menu {
+            display: flex;
+            padding-bottom: 9px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header ul li {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        header ul li img {
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+
+
+        /* キービジュアル */
+        .hero {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .hero-full-img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .hero-text {
@@ -87,7 +117,7 @@
         }
 
 
-        /* お知らせ リスト上下のボーダー追加・調整*/
+        /* お知らせ */
         .news {
             width: 80%;
             margin: 40px auto;
@@ -97,7 +127,6 @@
         .news h1 {
             font-size: 16px;
             font-weight: bold;
-            border-left: 4px solid black;
             padding-left: 10px;
             margin-bottom: 20px;
         }
@@ -114,11 +143,36 @@
             border-top: none;
         }
 
+        .news ul {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+
         .news-date {
             width: 100px;
             color: #666;
             font-size: 13px;
             flex-shrink: 0;
+        }
+
+        .news-logo {
+            margin-right: 30px;
+        }
+
+        /* 1列目コンテンツラベルCSSで表現する場合の装飾 */
+        .news-logo2 {
+            color: white;
+            background-color: gray;
+            display: flex;
+            width: 80px;
+            height: 15;
+            font-family: Roboto;
+            font-size: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 4px ;
+            margin-right: 21px;
         }
 
         .news-label {
@@ -135,23 +189,10 @@
             text-align: center;
         }
 
-
-        .news-label.corporate {
+        /* コンテンツラベル ロゴ挿入したため不要？ */
+        /* .news-label.notice {
             background-color: gray;
-        }
-
-        .news-label.notice {
-            background-color: gray;
-        }
-
-        .news-label.other {
-            background-color: gray;
-        }
-
-        .news-text {
-            flex: 1;
-        }
-
+        } */
 
         .news-button-container {
             text-align: center;
@@ -162,7 +203,7 @@
             background-color: gray;
             color: white;
             border: none;
-            padding: 12px 30px;
+            padding: 12px 80px;
             font-size: 14px;
             border-radius: 6px;
             cursor: pointer;
@@ -173,97 +214,93 @@
         /* 画像3カラム */
         .card-container {
             display: flex;
-            justify-content: center;
-            gap: 24px;
-            margin-top: 40px;
-            flex-wrap: wrap;
+            justify-content: center; /* ←中央揃えに */
+            align-items: flex-start;
+            gap: 40px;
+            padding: 40px 0;
         }
 
         .card {
-        width: 220px;
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        text-align: center;
-        transition: transform 0.3s ease;
-        margin-bottom : 70px ;
+            width: 220px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin-bottom : 70px ;
         }
 
         .card:hover {
-        transform: translateY(-5px);
+            transform: translateY(-5px);
         }
 
         .card img {
-        width: 100%;
-        height: auto;
-        display: block;
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .card p {
-        margin: 12px 0;
-        font-size: 16px;
-        font-weight: bold;
-        color: #333;
+            margin: 12px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
         }
 
 
-        /* フッター 画像挿入したのでフッターロゴ幅調整*/
-        .footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-color: gray;
-        color: white;
-        padding: 2px 40px; 
+        /* フッター */
+        footer {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px 10px;
+            background-color: gray;
+            color: white;
         }
 
         .footer-logo {
-        flex-shrink: 0;
-        margin-right: 60px;
-        text-align: center;
+            flex-shrink: 0;
+            margin-right: 60px;
+            text-align: center;
         }
 
         .footer-logo img {
-        width: 48px;
-        height: 48px;
-        display: block;
-        margin: 0 auto 8px;
-        }
-
-        .footer-logo span {
-        font-size: 16px;
-        font-weight: bold;
+            display: block;
+            width: 197px;
+            height: 50px;
+            margin: 0px auto 8px 20px;
         }
 
         .footer-columns {
-        display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        font-size: small;
+            display: flex;
+            gap: 40px;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            font-size: small;
         }
 
         .footer-col {
-        min-width: 180px;
+            min-width: 120px;
+            flex: 1;
         }
 
         .footer-title {
-        font-weight: bold;
-        margin-bottom: 6px;
+            font-weight: bold;
+            margin-bottom: 6px;
         }
 
         .footer-col ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 20px 0;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
         }
 
         .footer-col li {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #ddd;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ddd;
         }
 
 
@@ -271,12 +308,11 @@
 
 
 
-    <body>
-
         <!-- ヘッダー -->
         <header>
             <img src="top_logo.png" alt="ロゴ画像" >
-            <ul>
+            <!-- ヘッダーナビゲーションメニュー全体 -->
+            <ul class="nav-menu">
                 <li>
                     <img src="header_nav.png" alt="ポリシー" style="vertical-align: middle;">
                 </li>
@@ -297,106 +333,113 @@
 
 
 
-        <!-- メインビジュアル -->
+        <!-- キービジュアル -->
         <div class="hero">
-            <div class="company-logo">
-                <img src="KeyBisual.png" alt="DXO株式会社ロゴ" >
-            </div>
+            <img src="KeyBisual.png" alt="DXO株式会社ロゴ" class="hero-full-img">
         </div>
 
 
+        <main>
+            <!-- お知らせ　→ ロゴ挿入 -->
+            <div class="news">
+                <h1>お知らせ</h1>
+                    <ul>
+                        <li>
+                            <span class="news-date">2023/01/01</span>
+                            <span class="news-logo"><img src="content-lavel1.png" alt="コーポレート"></span>
+                            <!-- コンテンツラベルCSSのみで表す場合 -->
+                            <!-- <span class="news-logo2">コーポレート</span>  -->
+                            <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
+                        </li>
+                        <li>
+                            <span class="news-date">2023/01/01</span>
+                            <span class="news-logo"><img src="content-lavel2.png" alt="お知らせ"></span>
+                            <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
+                        </li>
+                        <li>
+                            <span class="news-date">2023/01/01</span>
+                            <span class="news-logo"><img src="content-lavel2.png" alt="お知らせ"></span>
+                            <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
+                        </li>
+                        <li>
+                            <span class="news-date">2023/01/01</span>
+                            <span class="news-logo"><img src="content-lavel3.png" alt="その他"></span>
+                            <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
+                        </li>
+                        <li>
+                            <span class="news-date">2023/01/01</span>
+                            <span class="news-logo"><img src="content-lavel1.png" alt="コーポレート"></span>
+                            <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
+                        </li>
+                    </ul>
 
-        <!-- お知らせ -->
-        <div class="news">
-            <h1>お知らせ</h1>
-            <ul>
-                <li>
-                    <span class="news-date">2023/01/01</span>
-                    <span class="news-label corporate">コーポレート</span>
-                    <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
-                </li>
-                <li>
-                    <span class="news-date">2023/01/01</span>
-                    <span class="news-label notice">お知らせ</span>
-                    <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
-                </li>
-                <li>
-                    <span class="news-date">2023/01/01</span>
-                    <span class="news-label notice">お知らせ</span>
-                    <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
-                </li>
-                <li>
-                    <span class="news-date">2023/01/01</span>
-                    <span class="news-label other">その他</span>
-                    <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
-                </li>
-                <li>
-                    <span class="news-date">2023/01/01</span>
-                    <span class="news-label corporate">コーポレート</span>
-                    <span class="news-text">ここにテキストが入りますここにテキストが入ります</span>
-                </li>
-             </ul>
+                <div class="news-button-container">
+                    <button class="news-button">お知らせ一覧</button>
+                </div>
 
-            <div class="news-button-container">
-                <button class="news-button">お知らせ一覧</button>
             </div>
 
-        </div>
 
-
-
-        <!-- 画像3カラム -->
-        <div class="card-container">
-            <div class="card">
-                <img src="member.png" alt="社員紹介の画像" width="200" height="150">
-                <p>社員紹介</p>
+            <!-- カード3カラム -->
+            <div class="card-container">
+                <div class="card">
+                    <img src="member.png" alt="社員紹介の画像" width="220">
+                    <p>社員紹介</p>
+                </div>
+                <div class="card">
+                    <img src="report.jpg" alt="社内報の画像" width="220">
+                    <p>社内報</p>
+                </div>
+                <div class="card">
+                    <img src="logo.png" alt="ポータルロゴ画像" width="220">
+                    <p>DXO社内ポータルとは</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="report.jpg" alt="社内報の画像" width="200" height="150">
-                <p>社内報</p>
-            </div>
-            <div class="card">
-                <img src="logo.png" alt="ポータルロゴ画像" width="200" height="150">
-                <p>DXO社内ポータルとは</p>
-            </div>
-        </div>
 
-
+        </main>
 
         <!-- フッター -->
-        <footer class="footer">
-            <div class="footer-logo">
-                <img src="logo.png" alt="DXOロゴ">DXO,Inc.
-            </div>
-            <div class="footer-columns">
-                <div class="footer-col">
-                    <p class="footer-title">ポリシー</p>
-                    <ul>
-                        <li> - 企業理念</li>
-                        <li> - サイトコンセプト</li>
-                    </ul>
-                    <p class="footer-title">お知らせ</p>
-                    <p class="footer-title">社内報</p>
-                </div>
-                <div class="footer-col">
-                    <p class="footer-title">社員紹介</p>
-                    <ul>
-                        <li> - 介護事業本部</li>
-                        <li> - IT＆マーケティング事業本部</li>
-                        <li> - セールスフォワード事業本部</li>
-                        <li> - 人事総務本部</li>
-                        <li> - 経理財務本部</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <p class="footer-title">問い合わせ</p>
-                    <ul>
-                        <li>社内規定一覧</li>
-                        <li>便利なリンク集</li>
-                        <li>プロフィール更新依頼</li>
-                    </ul>
+        <footer>
+
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <div class="footer-container"></div>
+                    <img src="footer_logo.png" alt="DXOロゴ">
                 </div>
             </div>
+
+            <div class="footer-right">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <p class="footer-title">ポリシー</p>
+                        <ul>
+                            <li> - 企業理念</li>
+                            <li> - サイトコンセプト</li>
+                        </ul>
+                        <p class="footer-title">お知らせ</p>
+                        <p class="footer-title">社内報</p>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-title">社員紹介</p>
+                        <ul>
+                            <li> - 介護事業本部</li>
+                            <li> - IT＆マーケティング事業本部</li>
+                            <li> - セールスフォワード事業本部</li>
+                            <li> - 人事総務本部</li>
+                            <li> - 経理財務本部</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-title">問い合わせ</p>
+                        <ul>
+                            <li>社内規定一覧</li>
+                            <li>便利なリンク集</li>
+                            <li>プロフィール更新依頼</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </footer>
 
 
