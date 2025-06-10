@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
         <!-- /* ページタイトル */ -->
         <title>DXO株式会社</title>
     </head>
@@ -10,9 +11,7 @@
     <body>
 
         <!-- CSS -->
-        <style>
-        </style>
-
+        <!-- <style></style> -->
 
 
         <!-- HTML -->
@@ -20,75 +19,73 @@
 
             <!-- ヘッダー -->
             <header>
-
-                <!-- トップロゴ -->
-                <img src="top_logo.png" alt="トップロゴ">
-
-                <!-- ナビゲーションメニュー 横に並べるCSS -->
-                <div class="header_nav">
-                    <ul>
-                        <span>
-                            <img src="header_nav.png" alt="ポリシー">
+                <div class="header-container">
+                    <!-- トップロゴ -->
+                     <a href="社内ポータルトップリンク">
+                    <span class="top-logo">
+                        <span class="top-logo-mark">
+                            <img src="/使用画像/logo_mark 1.png" alt="トップロゴ画像">
                         </span>
-                        <span>
-                            <img src="header_nav_news.png" alt="お知らせ">
-                        </span>
-                        <span>
-                            <img src="header_nav-member.png" alt="社員紹介">
-                        </span>
-                        <span>
-                            <img src="header_nav_news2.png" alt="社内報">
-                        </span>
-                        <span>
-                            <img src="header_nav_contact.png" alt="お問い合わせ">
-                        </span>
-                    </ul>
+                        <span class="top-logo-text">社内ポータル</span>
+                    </span>
+                    </a>
+                    <!-- ナビゲーションメニュー ロゴと横に並べるCSS foundation -->
+                    <div class="header-nav">
+                        <ul>
+                            <li><a href="ポリシーページリンク">ポリシー</a></li>
+                            <li><a href="お知らせページリンク">お知らせ</a></li>
+                            <li><a href="社員紹介ページリンク">社員紹介</a></li>
+                            <li><a href="社内報ページリンク">社内報</a></li>
+                            <li><a href="問い合わせページリンク">問い合わせ</a></li>
+                        </ul>
+                    </div>
                 </div>
             </header>
 
             <!-- キービジュアル -->
             <div class="KeyBisual">
-                <img src="KeyBisual.png" alt="キービジュアル">
+                <img src="/使用画像/KeyBisual.png" alt="キービジュアル">
             </div>
 
 
             <!-- お知らせ -->
             <div class="news">
                 <h1>お知らせ</h1>
-                <!-- お知らせ一覧リスト リスト黒点消す・h1設定CSS -->
+
+                <!-- お知らせ一覧リスト テキスト表気に変更・リスト黒点消す・h1設定CSS -->
                 <ul>
                     <li>
                         <span class="news-date">2023/01/01</span>
                         <span class="news-label">
-                            <img src="content-lavel1.png" alt="コンテンツラベル">
+                            <img src="/使用画像/content-lavel1.png" alt="コンテンツラベル">
                         </span>
                         <span class="news-text">ここにテキストが入ります</span>
                     </li>
                     <li>
                         <span class="news-date">2023/01/01</span>
                         <span class="news-label">
-                            <img src="content-lavel2.png" alt="コンテンツラベル">
+                            <img src="/使用画像/content-lavel2.png" alt="コンテンツラベル">
                         </span>
                         <span class="news-text">ここにテキストが入ります</span>
                     </li>
                     <li>
                         <span class="news-date">2023/01/01</span>
                         <span class="news-label">
-                            <img src="content-lavel2.png" alt="コンテンツラベル">
+                            <img src="/使用画像/content-lavel2.png" alt="コンテンツラベル">
                         </span>
                         <span class="news-text">ここにテキストが入ります</span>
                     </li>
                     <li>
                         <span class="news-date">2023/01/01</span>
                         <span class="news-label">
-                            <img src="content-lavel3.png" alt="コンテンツラベル">
+                            <img src="/使用画像/content-lavel3.png" alt="コンテンツラベル">
                         </span>
                         <span class="news-text">ここにテキストが入ります</span>
                     </li>
                     <li>
                         <span class="news-date">2023/01/01</span>
                         <span class="news-label">
-                            <img src="content-lavel1.png" alt="コンテンツラベル">
+                            <img src="/使用画像/content-lavel1.png" alt="コンテンツラベル">
                         </span>
                         <span class="news-text">ここにテキストが入ります</span>
                     </li>
@@ -105,15 +102,15 @@
             <card-container>
                 <!-- まとめて指定するCSS class統一 -->
                 <div class="card">
-                    <img src="member.png" alt="社員紹介の画像">
+                    <img src="/使用画像/member.png" alt="社員紹介の画像">
                     <p>社員紹介</p>
                 </div>
                 <div class="card">
-                    <img src="report.jpg" alt="社内報の画像">
+                    <img src="/使用画像/report.jpg" alt="社内報の画像">
                     <p>社内報</p>
                 </div>
                 <div class="card">
-                    <img src="logo.png" alt="DXO株式会社ポータルの画像">
+                    <img src="/使用画像/logo.png" alt="DXO株式会社ポータルの画像">
                     <p>DXO部式会社ポータルとは</p>
                 </div>
             </card-container>
@@ -123,7 +120,7 @@
             <footer>
                 <!-- フッターナビゲーションメニュー 黒点消す・横並び3カラム・右寄せCSS-->
                  <div class="footer-nav">
-                    <img src="footer_logo.png" alt="フッターロゴ">
+                    <img src="/使用画像/footer_logo.png" alt="フッターロゴ">
                  </div>
                  <div class="footer-right">
                     <div class="footer-columns">

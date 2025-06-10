@@ -1,0 +1,91 @@
+/*
+ * This file is the entry point for the foundation styles.
+ */
+html {
+  width: 1440px;
+  height: 1960px;
+}
+
+h1 {
+  color: red;
+}
+
+header {
+  display: flex;
+  width: 1440px;
+  height: 80px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.header-container {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-container a {
+  color: var(--Style-Text-Black, #434343);
+  text-decoration: none;
+}
+
+.header-container a:hover {
+  text-decoration: none;
+}
+
+.top-logo {
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 38.988px;
+  height: 40px;
+  flex-shrink: 0;
+  aspect-ratio: 38.99/40;
+}
+
+.top-logo-text {
+  color: var(--Style-Text-Black, #434343);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.55px;
+  white-space: nowrap;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  color: var(--Style-Text-Black, #434343);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.header-nav a {
+  color: var(--Style-Text-Black, #434343);
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
