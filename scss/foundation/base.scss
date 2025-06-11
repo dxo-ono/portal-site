@@ -1,8 +1,12 @@
 html {
-    width: 1440px;
-    height: 1960px;
+  width: 1440px;
+  height: 1960px;
+  background-color: #fff;
 }
 
-h1 {
-    color: red;
-}
+$gradient-underline: linear-gradient(
+  90deg,
+  #AADCB9 0%,
+  #82BEF0 50%,
+  #D2A5EB 100%
+);

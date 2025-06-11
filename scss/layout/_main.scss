@@ -1,0 +1,27 @@
+// メインコンテンツ　ヒーロービジュアル、お知らせ一覧、カードセクション
+
+.hero {
+    display: flex;
+    // baseで指定しているので1400px以上の幅で見ると余白が発生...
+    justify-content: center;
+    width: 100vw;
+    height: 561px;
+    margin: 0;
+    padding: 0;
+    // キャッチコピーテキスト入れるならHTMLで挿入よりもscssでurl(back-ground:img;)挿入したほうがいいかも？
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 1200px;
+    height: 448px;
+    padding: 726px 120px 744px 120px;
+}
+
+// .news-list {
+
+// }
