@@ -1,0 +1,12 @@
+
+.hero {
+    display: flex;
+    // baseで指定しているので1400px以上の幅で見ると余白が発生...
+    justify-content: center;
+    width: 100vw;
+    height: 561px;
+    margin: 0;
+    padding: 0;
+    // キャッチコピーをテキストにするならHTMLで挿入よりもscssでurl(back-ground:img;)挿入したほうがいいかも
+}
+

@@ -1,6 +1,22 @@
 @use "../foundation/base.scss" as *;
+@use "../object/utility/color" as *;
+@use "../object/utility/color" as color;
 
-header {
+.header-outer {
+    position: relative;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: color.$border-top;
+    }
+}
+
+.site-header {
     display: flex;
     width: 1440px;
     height: 80px;
@@ -10,6 +26,7 @@ header {
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+    border-top: 4px solid $border-top;
 }
 
 .header-container {
@@ -20,7 +37,7 @@ header {
 }
 
 .header-container a {
-    color: var(--Style-Text-Black, #434343);
+    color: $text-black;
     text-decoration: none;
 }
 
@@ -45,7 +62,7 @@ header {
 }
 
 .top-logo-text {
-    color: var(--Style-Text-Black, #434343);
+    color: $text-black;
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 11px;
     font-style: normal;
@@ -61,7 +78,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    color: var(--Style-Text-Black, #434343);
+    color: $text-black;
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 18px;
     font-style: normal;
@@ -72,7 +89,7 @@ header {
 .header-nav a {
     content:"" ;
     position: relative;
-    color: var(--Style-Text-Black,#434343);
+    color: $text-black;
     text-decoration: none;
     padding-bottom: 4px;
 }
