@@ -3,8 +3,6 @@
 @use "../object/utility/color" as color;
 
 .header-outer {
-    position: relative;
-
     &::before {
     content: "";
     position: absolute;

@@ -1,0 +1,11 @@
+/*
+ * This file is the entry point for the foundation styles.
+ */
+.hero {
+  margin-bottom: 85px;
+}
+
+html {
+  width: 1440px;
+  height: 1960px;
+}/*# sourceMappingURL=index.css.map */

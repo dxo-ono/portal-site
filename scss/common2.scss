@@ -1,6 +1,8 @@
-// Foundation
+
 @use "foundation/index.scss" as foundation;
 @use "layout/index.scss" as layout;
 @use "object/project/news" as object;
-@use "object/project/hero"  ;
+@use "object/project/hero" ;
+@use "object/project/header" ;
+@use "object/component/news-button";
 @use "object/utility/color" ;

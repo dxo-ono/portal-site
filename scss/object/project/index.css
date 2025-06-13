@@ -1,0 +1,78 @@
+.news {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.section-title {
+  width: 100%;
+  margin: 0;
+  color: #434343;
+  text-align: left;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.title-under-border {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 2px solid #C4C4C4;
+}
+.title-under-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #AADCB9 0%, #82BEF0 50%, #D2A5EB 100%);
+  z-index: 1;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.news-content li {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 21px 0px;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px dotted #ddd;
+}
+
+.news-date {
+  color: #434343;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.news-text {
+  color: #434343;
+  font-family: Robot;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 561px;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */
