@@ -4,6 +4,12 @@
 //marginはこっち! paddingはscss/object/projectに記述！
 
 
+
 .hero {
     margin-bottom: 85px;
+}
+
+//↓子要素にmargin記述しない（とりあえずで記述、あとで修正）
+.card-container{
+    margin-top: 50px;
 }

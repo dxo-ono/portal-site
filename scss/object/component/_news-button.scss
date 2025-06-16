@@ -1,12 +1,27 @@
-//news-button
+// news-button
 @use "../utility/color" as *;
+@use "../utility/color" as color;
 
-.news-button {
+.news-button-container {
     display: flex;
-    height: 64px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: $gradient-button;
 }
+
+//news-button装飾(他ページで使い回さないのでまとめて記述)
+.news-button {
+    width: 352px;
+    height: 60px;
+    color: #fff;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    background: $gradient-button;
+    border-radius: 8px;
+    border: none;
+    }
