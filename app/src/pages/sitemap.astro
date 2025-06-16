@@ -1,0 +1,135 @@
+---
+import axios from 'axios'
+
+// APIからデータを取得する関数を定義
+async function fetchData() {
+  const sid =
+    'AKfycbylPsqaPa2Ef-d21bI4zu6BaSgTySpLeM6LxW-VNrzf0iagTyFWv3kbcK1jwGi237_l'
+  const ssJsonUrl = `https://script.google.com/macros/s/${sid}/exec`
+  try {
+    const response = await axios.get(ssJsonUrl)
+    return response.data
+  } catch (error) {
+    console.error(error)
+    return [] // エラーが発生した場合は空の配列を返す
+  }
+}
+
+const lists = await fetchData()
+const keys = lists.length > 0 ? Object.keys(lists[0]) : []
+const title = 'サンプルプロジェクト'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/tailwind.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="bg-white">
+        <nav
+          class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1 justify-between">
+            <h1 class="font-sans text-lg font-bold">{title}</h1>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1Jo1PINsawsta2O2O04N4ZWxm3W9a3pIZ235L5yF27m8/edit#gid=0"
+              target="_blank">スプレッドシート</a
+            >
+          </div>
+        </nav>
+      </header>
+      <table class="min-w-full table-auto">
+        <thead class="bg-gray-800 text-white">
+          <tr>
+            {
+              keys.map((key) => (
+                <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
+                  {key}
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          {
+            lists.map((list) => (
+              <tr
+                class={`${list.status === 'complete' ? 'bg-green-100' : ''} ${list.status === 'done' ? 'bg-blue-100' : ''}`}
+              >
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  {list.id}
+                </td>
+                {list.status ? (
+                  <>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600">
+                      <a href={list.url} target="_blank">
+                        {list.title}
+                      </a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {list.url}
+                    </td>
+                  </>
+                ) : (
+                  <>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                      {list.title}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      {list.url}
+                    </td>
+                  </>
+                )}
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {list.status}
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {list.etc}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+</style>
