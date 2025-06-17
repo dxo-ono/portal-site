@@ -1,106 +1,104 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-  <h2 class="test-takemon">TTTTTTTTTT</h2>
-    <!-- ヒーロービジュアル -->
-    <div class="hero">
-      <img src="" alt="ヒーロービジュアル">
-    </div>
+  <!-- ヒーロービジュアル -->
+  <div class="hero">
+    <img src="/images/KeyBisual.png" alt="ヒーロービジュアル" />
+  </div>
 
-    <!-- お知らせ -->
-    <main class="main-content">
-        <section class="news">
-            <div class="title-under-border">
-                <h1 class="section-title">お知らせ</h1>
-            </div>
-            <!-- お知らせ一覧リスト テキスト表気に変更・リスト黒点消す・h1設定CSS -->
-            <div class="news-content">
-                <ul>
-                    <a href="お知らせページリンク1" class="news-page-link">
-                        <li>
-                            <span class="news-date">2023/01/01</span>
-                            <span class="news-label">
-                                <img src="/使用画像/content-lavel1.png" alt="コンテンツラベル">
-                            </span>
-                            <div class="news-text">ここにテキストが入ります</div>
-                        </li>
-                    </a>
-                    <a href="お知らせページリンク2" class="news-page-link">
-                        <li>
-                            <span class="news-date">2023/01/01</span>
-                            <span class="news-label">
-                                <img src="/使用画像/content-lavel2.png" alt="コンテンツラベル">
-                            </span>
-                            <div class="news-text">ここにテキストが入ります</div>
-                        </li>
-                    </a>
-                    <a href="お知らせページリンク3" class="news-page-link">
-                        <li>
-                            <span class="news-date">2023/01/01</span>
-                            <span class="news-label">
-                                <img src="/使用画像/content-lavel2.png" alt="コンテンツラベル">
-                            </span>
-                            <div class="news-text">ここにテキストが入ります</div>
-                        </li>
-                    </a>
-                    <a href="お知らせページリンク4" class="news-page-link">
-                        <li>
-                            <span class="news-date">2023/01/01</span>
-                            <span class="news-label">
-                                <img src="/使用画像/content-lavel3.png" alt="コンテンツラベル">
-                            </span>
-                            <div class="news-text">ここにテキストが入ります</div>
-                        </li>
-                    </a>
-                      <a href="お知らせページリンク4" class="news-page-link">
-                        <li>
-                            <span class="news-date">2023/01/01</span>
-                            <span class="news-label">
-                                <img src="/使用画像/content-lavel1.png" alt="コンテンツラベル">
-                            </span>
-                            <div class="news-text">ここにテキストが入ります</div>
-                        </li>
-                    </a>
-                </ul>
-            </div>
+  <!-- お知らせ -->
+  <main class="main-content">
+    <section class="news">
+      <div class="title-under-border">
+        <h1 class="section-title">お知らせ</h1>
+      </div>
+      <!-- お知らせ一覧リスト -->
+      <div class="news-content">
+        <ul>
+          <a href="お知らせページリンク1" class="news-page-link">
+            <li>
+              <span class="news-date">2023/01/01</span>
+              <span class="news-label">
+                <img src="/images/content-lavel1.png" alt="コンテンツラベル" />
+              </span>
+              <div class="news-text">ここにテキストが入ります</div>
+            </li>
+          </a>
+          <a href="お知らせページリンク2" class="news-page-link">
+            <li>
+              <span class="news-date">2023/01/01</span>
+              <span class="news-label">
+                <img src="/images/content-lavel2.png" alt="コンテンツラベル" />
+              </span>
+              <div class="news-text">ここにテキストが入ります</div>
+            </li>
+          </a>
+          <a href="お知らせページリンク3" class="news-page-link">
+            <li>
+              <span class="news-date">2023/01/01</span>
+              <span class="news-label">
+                <img src="/images/content-lavel2.png" alt="コンテンツラベル" />
+              </span>
+              <div class="news-text">ここにテキストが入ります</div>
+            </li>
+          </a>
+          <a href="お知らせページリンク4" class="news-page-link">
+            <li>
+              <span class="news-date">2023/01/01</span>
+              <span class="news-label">
+                <img src="/images/content-lavel3.png" alt="コンテンツラベル" />
+              </span>
+              <div class="news-text">ここにテキストが入ります</div>
+            </li>
+          </a>
+          <a href="お知らせページリンク4" class="news-page-link">
+            <li>
+              <span class="news-date">2023/01/01</span>
+              <span class="news-label">
+                <img src="/images/content-lavel1.png" alt="コンテンツラベル" />
+              </span>
+              <div class="news-text">ここにテキストが入ります</div>
+            </li>
+          </a>
+        </ul>
+      </div>
 
-            <!-- お知らせ一覧ボタンCSS -->
-            <div class="news-button-container">
-                <a href="お知らせ一覧ページリンク" class="news-button-link">
-                    <button class="news-button">お知らせ一覧</button>
-                </a>
-            </div>
-        </section>
+      <!-- お知らせ一覧ボタンCSS -->
+      <div class="news-button-container">
+        <a href="お知らせ一覧ページリンク" class="news-button-link">
+          <button class="news-button">お知らせ一覧</button>
+        </a>
+      </div>
+    </section>
 
-        <!-- DXO株式会社について -->
-        <section class="card-container">
-            <!-- まとめて指定するCSS class統一 -->
-            <div class="card">
-                <a href="社員紹介ページリンク" class="card-link">
-                <img src="/使用画像/member.png" alt="社員紹介の画像">
-                <h2 class="card-text">社員紹介</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="社内報ページリンク" class="card-link">
-                <img src="/使用画像/report.jpg" alt="社内報の画像">
-                <h2 class="card-text">社内報</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="DXOポータルページリンク" class="card-link">
-                <img src="/使用画像/logo.png" alt="DXO株式会社ポータルの画像">
-                <h2 class="card-text">DXO部式会社ポータルとは</h2>
-                </a>
-            </div>
-        </section>
-    </main>
+    <!-- DXO株式会社について -->
+    <section class="card-container">
+      <!-- まとめて指定するCSS class統一 -->
+      <div class="card">
+        <a href="社員紹介ページリンク" class="card-link">
+          <img src="/images/member.png" alt="社員紹介の画像" />
+          <h2 class="card-text">社員紹介</h2>
+        </a>
+      </div>
+      <div class="card">
+        <a href="社内報ページリンク" class="card-link">
+          <img src="/images/report.jpg" alt="社内報の画像" />
+          <h2 class="card-text">社内報</h2>
+        </a>
+      </div>
+      <div class="card">
+        <a href="DXOポータルページリンク" class="card-link">
+          <img src="/images/logo.png" alt="DXO株式会社ポータルの画像" />
+          <h2 class="card-text">DXO部式会社ポータルとは</h2>
+        </a>
+      </div>
+    </section>
+  </main>
 </Layout>
 
-<style>
+<!-- <style>
   main {
     margin: auto;
     padding: 1rem;
@@ -159,5 +157,5 @@ import Card from '../components/Card.astro'
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
     padding: 0;
-  }
-</style>
+  } -->
+<!-- </style> -->
