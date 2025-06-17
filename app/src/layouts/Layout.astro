@@ -4,28 +4,29 @@ interface Props {
 }
 
 const { title } = Astro.props
-import '@fontsource-variable/noto-sans-jp';
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import "../css/style.css";
+import '@fontsource-variable/noto-sans-jp'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+//ここに読み込み↓のbody内に記述で読み込み完了
 ---
 
 <!doctype html>
 <html lang="ja">
-
   <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="css/style.css">
-      <title>DXO株式会社</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <title>DXO株式会社</title>
   </head>
 
   <body>
+    <!-- header main footer 読み込み-->
     <Header />
     <slot />
     <Footer />
   </body>
 </html>
-<style is:global>
+
+<!-- <style is:global>
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -54,4 +55,4 @@ import "../css/style.css";
       Courier New,
       monospace;
   }
-</style>
+</style> -->
