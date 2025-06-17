@@ -54,6 +54,7 @@ case "$1" in
         ;;
     format)
         docker exec -it ${CONTAINER_NAME} npm run format
+        docker exec -it ${CONTAINER_NAME} npx prettier --write "."
         ;;
     build)
         docker exec -it ${CONTAINER_NAME} npm run build
