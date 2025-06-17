@@ -1,0 +1,25 @@
+// news-button
+@use '../color.scss' as *;
+
+.news-button-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-button {
+  width: 352px;
+  height: 60px;
+  color: #fff;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  background: $gradient-button;
+  border-radius: 8px;
+  border: none;
+}

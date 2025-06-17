@@ -1,0 +1,11 @@
+//ヒーロービジュアル
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  height: 561px;
+  padding: 0;
+  background-color: #fff;
+  // キャッチコピーをテキストにするなら
+  // HTMLで挿入よりもscssでurl(back-ground:img;)挿入したほうがいいかも
+}
