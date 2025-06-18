@@ -1,11 +1,68 @@
 //ヒーロービジュアル
+
+@use "../color.scss" as *;
+@use "../breakpoint.scss" as *;
+
 .hero {
+  position: relative;
   display: flex;
-  justify-content: center;
-  width: 1440px;
+  justify-content: flex-start;
+  width: 100%;
   height: 561px;
-  padding: 0;
   background-color: #fff;
-  // キャッチコピーをテキストにするなら
-  // HTMLで挿入よりもscssでurl(back-ground:img;)挿入したほうがいいかも
+  background-image: url(../../../public/images/hero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+// スマホ
+@media (max-width: $breakpoint-sp){
+  .hero {
+    background-image: url(../../../public/images/KeyVisual-sp.jpg);
+  }
+}
+
+.copy-wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 600px;
+  height: 561px;
+  gap: 50px;
+  padding-left: 8%;
+  background: $gradient-white;
+  backdrop-filter: blur(5px);
+}
+
+.copy1 {
+  display: flex;
+  color: $text-black;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.copy2 {
+  display: flex;
+  color: $text-black;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 100%;
+}
+
+//スマホ メディアクエリ試し
+@media (max-width: $breakpoint-sp){
+  .copy1 {
+    font-size: 15px;
+  }
+  .copy2 {
+    font-size: 8px;
+  }
 }

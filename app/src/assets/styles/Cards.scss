@@ -7,13 +7,13 @@
   display: flex;
   padding: 0px 7.36px 0px 7.33px;
   justify-content: center;
-  align-items: flex-start;
   gap: 40.65px;
 }
 
 .card {
   width: 368px;
   height: 298px;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -30,14 +30,13 @@
 .card-text {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   color: $text-black;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
 }
 
-.card-link {
-  text-decoration: none;
-}

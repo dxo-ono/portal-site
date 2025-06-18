@@ -1,12 +1,15 @@
 // レイアウト
 // 大枠の位置配置の記述したい（子要素marginを記述しているため）
 
-.hero {
-    margin-bottom: 80px;
+@use "../color.scss" as *;
+
+.html{
+    background-color: $background-white;
+    height: auto;
 }
 
-.news {
-    margin: 0px 120px 0px 120px;
+.hero {
+    margin-bottom: 80px;
 }
 
 .news-content {

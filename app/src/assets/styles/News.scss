@@ -1,12 +1,15 @@
 @use '../color.scss' as *;
+@use "../breakpoint.scss" as *;
 
 .news {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
-.section-title-news {
+.news-title {
+  justify-content: flex-start;
   width: 100%;
   color: #434343;
   text-align: left;
@@ -20,8 +23,9 @@
 
 .title-under-border {
   position: relative;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
   border-bottom: 2px solid $style-object-gray;
   &::after {
     content: '';
@@ -38,7 +42,7 @@
 .news-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -78,9 +82,9 @@
   letter-spacing: 0.2px;
 }
 
-// テキスト装飾分割表記もできるがお知らせ新しくなるたびに装飾いじる
+// テキスト装飾分割表記もできるがお知らせ新しくなるたびに装飾変える
 // よりもastroの画像差し替えのみのほうが楽なので画像表記→読み込み遅くなる？
 .news-label img {
   width: 80px;
-  flex-shrink: 0;
+  height: auto;
 }
