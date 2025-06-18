@@ -4,10 +4,9 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  // width: 100%;
 }
 
-.section-title {
+.section-title-news {
   width: 100%;
   color: #434343;
   text-align: left;
@@ -16,6 +15,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
+  padding-bottom: 12px;
 }
 
 .title-under-border {
@@ -38,7 +38,8 @@
 .news-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .news-content li {
@@ -49,6 +50,13 @@
   align-items: center;
   gap: 40px;
   border-bottom: 1px dotted #ddd;
+}
+
+.news-page-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .news-date {
@@ -70,6 +78,9 @@
   letter-spacing: 0.2px;
 }
 
-.news-page-link {
-  text-decoration: none;
+// テキスト装飾分割表記もできるがお知らせ新しくなるたびに装飾いじる
+// よりもastroの画像差し替えのみのほうが楽なので画像表記→読み込み遅くなる？
+.news-label img {
+  width: 80px;
+  flex-shrink: 0;
 }

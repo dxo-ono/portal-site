@@ -1,15 +1,10 @@
 // news-button
 @use '../color.scss' as *;
 
-.news-button-container {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
 .news-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 352px;
   height: 60px;
   color: #fff;
@@ -22,4 +17,6 @@
   background: $gradient-button;
   border-radius: 8px;
   border: none;
+  padding: 10px;
+  gap: 10px;
 }
