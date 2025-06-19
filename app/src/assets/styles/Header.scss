@@ -1,6 +1,7 @@
 //ヘッダー
 
 @use '../color.scss' as *;
+@use "../breakpoint.scss" as *;
 
 .header-outer {
   position: relative;
@@ -20,7 +21,7 @@
   width: 100%;
   height: 80px;
   padding: 10px;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -34,7 +35,7 @@
   max-width: 1440px;
   justify-content: space-between;
   align-items: center;
-  // margin: 0 20px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -112,3 +113,47 @@
 .header-nav a:hover::after {
   transform: scaleX(1);
 }
+
+//ハンバーガーメニュー設定
+.hamburger {
+  display: none;
+}
+
+@media (max-width: $breakpoint-sp){
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav.open {
+    display: flex;
+    width: 100%;
+    padding: 59px 0px 615px 0px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+    background: $text-white;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+}
+
