@@ -5,11 +5,13 @@ import Layout from '../layouts/Layout.astro'
 <Layout title="Welcome to Astro.">
   <!-- ヒーロービジュアル -->
   <div class="hero">
+    <div class="bg-overlay-image"></div>
     <div class="copy-wrap">
       <div class="copy-main">「見ればわかる、つながる、ひらめく。」</div>
       <div class="copy-sub">－ 社内ポータルサイト －</div>
     </div>
   </div>
+
 
   <!-- お知らせ -->
   <main class="main-content">
@@ -55,6 +57,7 @@ import Layout from '../layouts/Layout.astro'
               </span>
               <div class="news-text">ここにテキストが入ります</div>
             </a>
+          </li>
           <li>
             <a href="お知らせページリンク4" class="news-page-link">
               <span class="news-date">2023/01/01</span>
@@ -71,7 +74,7 @@ import Layout from '../layouts/Layout.astro'
       <div class="news-button-container">
         <a href="お知らせ一覧ページリンク" class="news-button">お知らせ一覧</a>
       </div>
-    </section>
+    </div>
 
     <!-- DXO株式会社について -->
     <section class="card-container">
