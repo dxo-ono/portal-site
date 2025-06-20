@@ -1,0 +1,27 @@
+// レイアウト
+// 大枠の位置配置の記述したい（子要素marginを記述しているため）
+
+@use '../foundation/color.scss' as *;
+@use '../foundation/breakpoint.scss' as *;
+
+.html {
+  background-color: $background-white;
+  height: auto;
+}
+
+.hero {
+  margin-bottom: 80px;
+}
+
+.news-content {
+  margin-bottom: 50px;
+}
+
+.news-button-container {
+  margin-top: 50px;
+  margin-bottom: 107px;
+}
+
+.card-container {
+  margin-bottom: 107px;
+}
