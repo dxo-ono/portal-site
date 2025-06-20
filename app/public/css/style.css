@@ -1,1 +1,581 @@
-.html{background-color:#fff;height:auto}.hero{margin-bottom:80px}.news-content{margin-bottom:50px}.news-button-container{margin-top:50px;margin-bottom:107px}.card-container{margin-bottom:107px}.header-outer{position:relative}.header-outer::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%)}.site-header{display:flex;width:100%;height:80px;padding:10px;flex-direction:row;justify-content:center;align-items:center;gap:10px;flex-shrink:0;border-top:4px solid linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%)}.header-container{display:flex;width:90%;max-width:1440px;justify-content:space-between;align-items:center;margin:0 auto;padding:0 20px}.header-container a{color:#434343;text-decoration:none}.header-container a:hover{text-decoration:none}.top-logo{display:flex;width:120px;justify-content:center;align-items:center;flex-shrink:0}.logo-mark{width:38.988px;height:40px;flex-shrink:0;aspect-ratio:38.99/40}.top-logo-text{color:#434343;font-family:"Hiragino Kaku Gothic ProN";font-size:11px;font-style:normal;font-weight:400;line-height:100%;letter-spacing:.55px;white-space:nowrap}.header-nav ul{list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;color:#434343;font-family:"Hiragino Kaku Gothic ProN";font-size:18px;font-style:normal;font-weight:400;line-height:160%}.header-nav a{content:"";position:relative;color:#434343;text-decoration:none;padding-bottom:4px}.header-nav a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:4px;background:linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}.header-nav a:hover::after{transform:scaleX(1)}.hamburger{display:none}@media(max-width: 810px){.header-nav{display:none;flex-direction:column;position:absolute;top:80px;right:0;width:100%;padding:20px;z-index:100}.header-nav ul{display:flex;flex-direction:column;align-items:center;gap:28px;padding:0;margin:0}.header-nav.open{display:flex;width:100%;padding:59px 0px 615px 0px;height:auto;flex-direction:column;align-items:center;gap:28px;flex-shrink:0;background:#fff}.hamburger{display:flex}}.hero{position:relative;display:flex;justify-content:flex-start;width:100%;height:561px;background-color:#fff;background-image:url(../../../public/images/KeyVisual@2x.png);aspect-ratio:16/9;background-size:cover;background-position:center}.copy-wrap{position:relative;width:100%;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;width:500px;height:561px;gap:50px;padding-left:3%;background:linear-gradient(90deg, #FAFAFA 0%, rgba(238, 238, 238, 0) 100%);backdrop-filter:blur(5px)}.copy-main{display:flex;color:#434343;font-family:"Hiragino Kaku Gothic ProN";font-size:25px;font-style:normal;font-weight:300;line-height:160%}.copy-sub{display:flex;color:#434343;text-align:center;font-family:"Hiragino Kaku Gothic ProN";font-size:18px;font-style:normal;font-weight:250;line-height:100%}.hero::before{display:none}@media(max-width: 810px){.hero{position:relative;width:100%;aspect-ratio:414/310.5;background-image:url(/images/KeyVisual-sp) center/cover no-repeat;overflow:hidden}.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, #AADCB9 10%, #82BEF0 27%, #D2A5EB 40%, #D2A5EB 50%, #82BEF0 70%, #AADCB9 90%);mix-blend-mode:overlay;opacity:1;z-index:1n;position:none}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFF 7%, #FFF 93%, rgba(255, 255, 255, 0) 100%);opacity:.3;z-index:2;pointer-events:none}.bg-overlay-image{position:absolute;inset:0;background:url(/images/img_top_dxoworld@2x.jpg) #d3d3d3 -29.236px -43.368px/123.816% 116.569% no-repeat;opacity:.06;z-index:3;pointer-events:none}.copy-wrap{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;color:#fff}.copy-main{font-size:18.122px;color:#fff}.copy-sub{font-size:12px;color:#fff}}.news{display:flex;flex-direction:column;align-items:center;width:100%}.news-title{justify-content:flex-start;width:100%;color:#434343;text-align:left;font-family:"Hiragino Kaku Gothic ProN";font-size:20px;font-style:normal;font-weight:600;line-height:30px;padding-bottom:12px}.title-under-border{position:relative;width:100%;max-width:1200px;padding:0 20px;border-bottom:2px solid #c4c4c4}.title-under-border::after{content:"";position:absolute;left:0;bottom:0;width:120px;height:2px;background:linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);z-index:1}.news-content{display:flex;width:100%;max-width:1200px;flex-direction:column;justify-content:flex-start}.news-content li{display:flex;width:1200px;margin:0 auto;padding:21px 0px;align-items:center;gap:40px;border-bottom:1px dotted #ddd}.news-page-link{text-decoration:none;display:flex;align-items:center;gap:16px}.news-date{color:#434343;font-family:Roboto,sans-serif;font-size:16px;font-style:normal;font-weight:300;line-height:24px}.news-text{color:#434343;font-family:Robot;font-size:16px;font-style:normal;font-weight:400;line-height:20px;letter-spacing:.2px}.news-label img{width:60px;height:auto}@media(max-width: 810px){.news-content{width:100%;flex-direction:column;gap:12px}}.card-container{width:100%;background-color:#fff;display:flex;padding:0px 7.36px 0px 7.33px;justify-content:center;gap:40.65px}.card{width:368px;height:298px;display:inline-flex;flex-direction:column;justify-content:center;align-items:center;background-color:#fff;box-shadow:0px -1px 6px 0px rgba(0,0,0,.16)}.card img{max-width:100%;height:auto;display:block}.card-text{display:flex;justify-content:center;align-items:center;color:#434343;padding-top:13px;padding-bottom:13px;font-size:20px;font-style:normal;font-weight:600;line-height:30px}@media(max-width: 810px){.card-container{flex-direction:column;align-items:center}.card{display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:32px}}@media(max-width: 1280px){.card-container{display:flex;flex-wrap:wrap;justify-content:center}.card{display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:32px}}.news-button{display:flex;align-items:center;justify-content:center;width:352px;height:60px;color:#fff;font-family:"Hiragino Kaku Gothic ProN";font-size:20px;font-style:normal;font-weight:600;line-height:30px;letter-spacing:.25px;background:linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);border-radius:8px;border:none;padding:10px;gap:10px}@media(max-width: 810px){.news-button{display:flex;width:auto;height:auto;align-items:flex-start;padding:17px 107px;color:#fff;font-family:"Hiragino Kaku Gothic ProN";font-size:20px;font-style:normal;font-weight:600;line-height:30px}}.footer{background:linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%),linear-gradient(90deg, #AADCB9 0%, #82BEF0 50%, #D2A5EB 100%);color:#fff;list-style:none;padding:20px 10px;width:100%;display:flex;justify-content:center;width:100%;height:auto;gap:10px}.footer-container{display:flex;width:90%;justify-content:space-between;align-items:flex-start}.footer-logo{display:flex;width:197px;height:50px;justify-content:center;align-items:center;flex-shrink:0;aspect-ratio:197/50}.footer-columns{display:flex;gap:30px;color:#fff;font-family:"Noto Sans JP";font-size:16px;font-style:normal;font-weight:500;line-height:32px}.footer-submenu{list-style:none;padding-left:0}.footer-submenu li{position:relative;padding-left:1rem}.footer-submenu li::before{content:"-";position:absolute;left:0;color:#fff}.footer-submenu li a{text-decoration:none;color:#fff}@media(max-width: 810px){.footer-container{flex-direction:column;padding:20px;gap:20px}.footer-columns{flex-direction:column;align-items:center;width:100%}.footer-column{width:100%}.footer-submenu{padding-left:0}.footer-submenu li{padding-left:1rem}}@media(max-width: 1280px){.footer-container{flex-direction:column;padding:20px;gap:20px}.footer-columns{flex-direction:column;align-items:center;width:100%}.footer-column{width:100%}.footer-submenu{padding-left:0}.footer-submenu li{padding-left:1rem}}
+.html {
+  background-color: #fff;
+  height: auto;
+}
+.hero {
+  margin-bottom: 80px;
+}
+.news-content {
+  margin-bottom: 50px;
+}
+.news-button-container {
+  margin-top: 50px;
+  margin-bottom: 107px;
+}
+.card-container {
+  margin-bottom: 107px;
+}
+.header-outer {
+  position: relative;
+}
+.header-outer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
+}
+.site-header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-top: 4px solid
+    linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
+}
+.header-container {
+  display: flex;
+  width: 90%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-container a {
+  color: #434343;
+  text-decoration: none;
+}
+.header-container a:hover {
+  text-decoration: none;
+}
+.top-logo {
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logo-mark {
+  width: 38.988px;
+  height: 40px;
+  flex-shrink: 0;
+  aspect-ratio: 38.99/40;
+}
+.top-logo-text {
+  color: #434343;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.55px;
+  white-space: nowrap;
+}
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  color: #434343;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.header-nav a {
+  content: '';
+  position: relative;
+  color: #434343;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.header-nav a:hover::after {
+  transform: scaleX(1);
+}
+.hamburger {
+  display: none;
+}
+@media (max-width: 480px) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
+  }
+  .header-nav.open {
+    display: flex;
+    width: 100%;
+    padding: 59px 0px 615px 0px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+    background: #fff;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+@media (max-width: 1024px) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
+  }
+  .header-nav.open {
+    display: flex;
+    width: 100%;
+    padding: 59px 0px 615px 0px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+    background: #fff;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 561px;
+  background-color: #fff;
+  background-image: url(../../../public/images/KeyVisual@2x.png);
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+}
+.copy-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 500px;
+  height: 561px;
+  gap: 50px;
+  padding-left: 3%;
+  background: linear-gradient(90deg, #fafafa 0%, rgba(238, 238, 238, 0) 100%);
+  backdrop-filter: blur(5px);
+}
+.copy-main {
+  display: flex;
+  color: #434343;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+.copy-sub {
+  display: flex;
+  color: #434343;
+  text-align: center;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 100%;
+  margin-left: 23%;
+}
+.hero::before {
+  display: none;
+}
+@media (max-width: 480px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 310.5px;
+    background: url(/images/KeyVisual-sp.jpg) center/cover no-repeat;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      #aadcb9 10%,
+      #82bef0 27%,
+      #d2a5eb 40%,
+      #d2a5eb 50%,
+      #82bef0 70%,
+      #aadcb9 90%
+    );
+    mix-blend-mode: overlay;
+    opacity: 1;
+    z-index: 1;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      #fff 7%,
+      #fff 93%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.3;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .bg-overlay-image {
+    position: absolute;
+    inset: 0;
+    background: url(/images/img_top_dxoworld@2x.jpg) #d3d3d3 -29.236px -43.368px/123.816%
+      116.569% no-repeat;
+    opacity: 0.06;
+    z-index: 3;
+    pointer-events: none;
+  }
+  .copy-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    z-index: 4;
+  }
+  .copy-main {
+    font-size: 18.122px;
+    color: #fff;
+  }
+  .copy-sub {
+    font-size: 12px;
+    color: #fff;
+  }
+}
+@media (max-width: 1280px) {
+  .copy-wrap {
+    width: 55%;
+    height: 131px;
+    bottom: -400px;
+    padding-left: 5%;
+  }
+}
+.news {
+  padding: 0 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.news-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.news-title {
+  color: #434343;
+  text-align: left;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.title-under-border {
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid #c4c4c4;
+}
+.title-under-border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
+  z-index: 1;
+}
+.news-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.news-content li {
+  display: flex;
+  margin: 0 auto;
+  padding: 21px 0px;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px dotted #ddd;
+}
+.news-page-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.news-date {
+  color: #434343;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+.news-text {
+  color: #434343;
+  font-family: Robot;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.news-label img {
+  width: 60px;
+  height: auto;
+}
+.card-container {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  padding: 0px 7.36px 0px 7.33px;
+  justify-content: center;
+  gap: 40.65px;
+}
+.card {
+  width: 368px;
+  height: 298px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #434343;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+}
+@media (max-width: 1300px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    display: flex;
+    max-width: 368px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+}
+.news-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 352px;
+  height: 60px;
+  color: #fff;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  background: linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  gap: 10px;
+}
+.footer {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.75) 100%
+    ),
+    linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
+  color: #fff;
+  list-style: none;
+  padding: 20px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+}
+.footer-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-logo {
+  display: flex;
+  width: 197px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  aspect-ratio: 197/50;
+}
+.footer-columns {
+  display: flex;
+  gap: 30px;
+  color: #fff;
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.footer-submenu {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-submenu li {
+  position: relative;
+  padding-left: 1rem;
+}
+.footer-submenu li::before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  color: #fff;
+}
+.footer-submenu li a {
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .footer-columns {
+    align-items: center;
+    width: 100%;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .footer-submenu {
+    padding-left: 0;
+  }
+  .footer-submenu li {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+  .footer-columns {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  .footer-column {
+    flex-wrap: wrap;
+    width: 240px;
+  }
+  .footer-submenu {
+    padding-left: 0;
+  }
+  .footer-submenu li {
+    padding-left: 1rem;
+  }
+}

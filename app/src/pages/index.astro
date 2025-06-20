@@ -12,67 +12,84 @@ import Layout from '../layouts/Layout.astro'
     </div>
   </div>
 
-
   <!-- お知らせ -->
   <main class="main-content">
     <div class="news">
-      <div class="title-under-border">
-        <div class="news-title">お知らせ</div>
-      </div>
-      <!-- お知らせ一覧リスト -->
-      <div class="news-content">
-        <ul>
-          <li>
-            <a href="お知らせページリンク1" class="news-page-link">
-              <span class="news-date">2023/01/01</span>
-              <span class="news-label">
-                <img src="/images/content-label1.png" alt="コンテンツラベル" />
-              </span>
-              <div class="news-text">ここにテキストが入ります</div>
-           </a>
-          </li>
-          <li>
-            <a href="お知らせページリンク2" class="news-page-link">
+      <div class="news-inner">
+        <div class="title-under-border">
+          <div class="news-title">お知らせ</div>
+        </div>
+        <!-- お知らせ一覧リスト -->
+        <div class="news-content">
+          <ul>
+            <li>
+              <a href="お知らせページリンク1" class="news-page-link">
                 <span class="news-date">2023/01/01</span>
                 <span class="news-label">
-                  <img src="/images/content-label2.png" alt="コンテンツラベル" />
+                  <img
+                    src="/images/content-label1.png"
+                    alt="コンテンツラベル"
+                  />
                 </span>
                 <div class="news-text">ここにテキストが入ります</div>
-               </a>
-          </li>
-          <li>
-            <a href="お知らせページリンク3" class="news-page-link">
-              <span class="news-date">2023/01/01</span>
-              <span class="news-label">
-                <img src="/images/content-label2.png" alt="コンテンツラベル" />
-              </span>
-              <div class="news-text">ここにテキストが入ります</div>
-            </a>
-          </li>
-          <li>
-            <a href="お知らせページリンク4" class="news-page-link">
-              <span class="news-date">2023/01/01</span>
-              <span class="news-label">
-                <img src="/images/content-label3.png" alt="コンテンツラベル" />
-              </span>
-              <div class="news-text">ここにテキストが入ります</div>
-            </a>
-          </li>
-          <li>
-            <a href="お知らせページリンク4" class="news-page-link">
-              <span class="news-date">2023/01/01</span>
-              <span class="news-label">
-                <img src="/images/content-label1.png" alt="コンテンツラベル" />
-              </span>
-              <div class="news-text">ここにテキストが入ります</div>
-            </a>
-          </li>
-        </ul>
-      </div>
+              </a>
+            </li>
+            <li>
+              <a href="お知らせページリンク2" class="news-page-link">
+                <span class="news-date">2023/01/01</span>
+                <span class="news-label">
+                  <img
+                    src="/images/content-label2.png"
+                    alt="コンテンツラベル"
+                  />
+                </span>
+                <div class="news-text">ここにテキストが入ります</div>
+              </a>
+            </li>
+            <li>
+              <a href="お知らせページリンク3" class="news-page-link">
+                <span class="news-date">2023/01/01</span>
+                <span class="news-label">
+                  <img
+                    src="/images/content-label2.png"
+                    alt="コンテンツラベル"
+                  />
+                </span>
+                <div class="news-text">ここにテキストが入ります</div>
+              </a>
+            </li>
+            <li>
+              <a href="お知らせページリンク4" class="news-page-link">
+                <span class="news-date">2023/01/01</span>
+                <span class="news-label">
+                  <img
+                    src="/images/content-label3.png"
+                    alt="コンテンツラベル"
+                  />
+                </span>
+                <div class="news-text">ここにテキストが入ります</div>
+              </a>
+            </li>
+            <li>
+              <a href="お知らせページリンク4" class="news-page-link">
+                <span class="news-date">2023/01/01</span>
+                <span class="news-label">
+                  <img
+                    src="/images/content-label1.png"
+                    alt="コンテンツラベル"
+                  />
+                </span>
+                <div class="news-text">ここにテキストが入ります</div>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <!-- お知らせ一覧ボタンCSS -->
-      <div class="news-button-container">
-        <a href="お知らせ一覧ページリンク" class="news-button">お知らせ一覧</a>
+        <!-- お知らせ一覧ボタンCSS -->
+        <div class="news-button-container">
+          <a href="お知らせ一覧ページリンク" class="news-button">お知らせ一覧</a
+          >
+        </div>
       </div>
     </div>
 
@@ -82,23 +99,21 @@ import Layout from '../layouts/Layout.astro'
       <div class="card">
         <a href="社員紹介ページリンク" class="card-link">
           <img src="/images/member.png" alt="社員紹介の画像" />
-          <h2 class="card-text">社員紹介</h2>
+          <div class="card-text">社員紹介</div>
         </a>
       </div>
       <div class="card">
         <a href="社内報ページリンク" class="card-link">
           <img src="/images/report.jpg" alt="社内報の画像" />
-          <h2 class="card-text">社内報</h2>
+          <div class="card-text">社内報</div>
         </a>
       </div>
       <div class="card">
         <a href="DXOポータルページリンク" class="card-link">
           <img src="/images/logo.png" alt="DXO株式会社ポータルの画像" />
-          <h2 class="card-text">DXO株式会社ポータルとは</h2>
+          <div class="card-text">DXO株式会社ポータルとは</div>
         </a>
       </div>
     </section>
   </main>
 </Layout>
-
-
