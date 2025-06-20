@@ -1,0 +1,97 @@
+@use '../foundation/color.scss' as *;
+@use '../foundation/breakpoint.scss' as *;
+
+.news {
+  padding: 0 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.news-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-title {
+  color: #434343;
+  text-align: left;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+.title-under-border {
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid $style-object-gray;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 2px;
+    background: $gradient-underline;
+    z-index: 1;
+  }
+}
+
+.news-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.news-content li {
+  display: flex;
+  // width: 1200px;
+  margin: 0 auto;
+  padding: 21px 0px;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px dotted #ddd;
+}
+
+.news-page-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.news-date {
+  color: $text-black;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.news-text {
+  color: $text-black;
+  font-family: Robot;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+// テキスト装飾分割表記もできるがお知らせ新しくなるたびに装飾変える
+// よりもastroの画像差し替えのみのほうが楽なので画像表記→読み込み遅くなる？
+.news-label img {
+  width: 60px;
+  height: auto;
+}
