@@ -1,0 +1,197 @@
+//ヘッダー
+
+@use '../foundation/color.scss' as *;
+@use '../foundation/breakpoint.scss' as *;
+
+.header-outer {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $border-top;
+  }
+}
+
+.site-header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-top: 4px solid $border-top;
+}
+
+.header-container {
+  display: flex;
+  width: 90%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container a {
+  color: $text-black;
+  text-decoration: none;
+}
+
+.header-container a:hover {
+  text-decoration: none;
+}
+
+.top-logo {
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  // gap: 12px;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 38.988px;
+  height: 40px;
+  flex-shrink: 0;
+  aspect-ratio: 38.99/40;
+}
+
+.top-logo-text {
+  color: $text-black;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.55px;
+  white-space: nowrap;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  color: $text-black;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.header-nav a {
+  content: '';
+  position: relative;
+  color: $text-black;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: $gradient-underline;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.header-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+//ハンバーガーメニュー設定
+.hamburger {
+  display: none;
+}
+
+@media (max-width: $breakpoint-sp) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav.open {
+    display: flex;
+    width: 100%;
+    padding: 59px 0px 615px 0px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+    background: $text-white;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+// 1024px以下480px以上の場合もハンバーガーメニューに
+@media (max-width: $breakpoint-pc) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav.open {
+    display: flex;
+    width: 100%;
+    padding: 59px 0px 615px 0px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+    background: $text-white;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
