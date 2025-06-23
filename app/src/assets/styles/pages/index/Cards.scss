@@ -48,11 +48,23 @@
     align-items: center;
   }
   .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+
+    &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 10px;
+      right: 8px;
+      bottom: 8px;
+      background: url(/images/pseudo.png) 0px 0px / 100% 100% no-repeat;
+    }
   }
 }
 
