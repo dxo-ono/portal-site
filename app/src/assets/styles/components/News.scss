@@ -53,22 +53,87 @@
   justify-content: flex-start;
 }
 
+.news-content ul{
+  border-bottom: 1px solid var(--Style-Object-Grey, #C4C4C4);
+}
+
 .news-content li {
   display: flex;
-  // width: 1200px;
-  margin: 0 auto;
+  margin: 0 7px 0 0 ;
   padding: 21px 0px;
   align-items: center;
   gap: 40px;
   border-bottom: 1px dotted #ddd;
 }
 
-.news-page-link {
+// スマホ
+@media (max-width: $breakpoint-sp){
+  .news-content li{
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// タブレット
+@media (max-width: $breakpoint-tb){
+  .news-content li{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.news-meta-wrap {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 40px;
 }
+
+@media (max-width: $breakpoint-sp){
+  .news-meta-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: $breakpoint-tb){
+  .news-meta-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+}
+
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+// スマホ
+@media (max-width: $breakpoint-sp){
+  .news-meta {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+// タブレット
+@media (max-width: $breakpoint-tb){
+  .news-meta {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 
 .news-date {
   color: $text-black;
@@ -89,9 +154,99 @@
   letter-spacing: 0.2px;
 }
 
-// テキスト装飾分割表記もできるがお知らせ新しくなるたびに装飾変える
-// よりもastroの画像差し替えのみのほうが楽なので画像表記→読み込み遅くなる？
-.news-label img {
-  width: 60px;
-  height: auto;
+@media(max-width: $breakpoint-sp){
+  .news-date{
+    color: #707070;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .news-text {
+    color: var(--Style-Text-Black, #434343);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.188px;
+  }
+}
+
+// 読み込む軽くなる・余計な記述を減らすためデフォルトから画像でなくテキストと装飾に変更
+.news-label {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.news-label-corporate {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 23px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 150% */
+  background: var(--Mater-Sub-Purple, #D2A5EB);
+}
+
+.news-label-news {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 23px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 150% */
+  background: var(--Mater-Sub-Blue, #82BEF0);
+}
+
+@media(max-width: $breakpoint-sp){
+  .news-label {
+  display: flex;
+  flex-shrink: 0;
+  }
+
+  .news-label-corporate {
+  display: flex;
+  width: 80px;
+  height: 18px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "Noto Sans JP";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 150% */
+  }
+
+  .news-label-news {
+    display: flex;
+    width: 80px;
+    height: 18px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 150% */
+  }
+
 }
