@@ -3,6 +3,7 @@
 @use '../../foundation/color.scss' as *;
 @use '../../foundation/breakpoint.scss' as *;
 
+// ヒーロービジュアル
 .hero {
   position: relative;
   display: flex;
@@ -17,6 +18,7 @@
   white-space: nowrap;
 }
 
+// コピーライト
 .copy-wrap {
   position: relative;
   width: 100%;
@@ -33,13 +35,65 @@
 }
 
 .copy-main {
+  position: relative;
   display: flex;
-  color: $text-black;
-  font-family: 'Hiragino Kaku Gothic ProN';
+  color: var(--Style-Text-Black, #434343);
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%; /* 40px */
+  letter-spacing: 1.25px;
+  padding: 0 16px;
+  min-width: 320px;
+}
+
+.copy-comma {
+  color: var(--Style-Text-Black, #434343);
+  font-family: "Hiragino Kaku Gothic ProN";
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
+  letter-spacing: -8.75px;
+}
+
+.copy-k {
+  color: var(--Style-Text-Black, #434343);
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: -1.25px;
+}
+
+.copy-left {
+  position: absolute;
+  width: 18.5px;
+  height: 24.5px;
+  flex-shrink: 0;
+  left: -16px;
+  top: -7px;
+  fill: var(--Style-Text-Black, #434343);
+  pointer-events: none;
+}
+
+.copy-right {
+  position: absolute;
+  right: 0;
+  top: 49%;
+  width: 18.5px;
+  height: 24.5px;
+  flex-shrink: 0;
+  fill: var(--Style-Text-Black, #434343);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.copy-main-wave {
+  display: none;
 }
 
 .copy-sub {
@@ -60,11 +114,12 @@
 
 // スマホ
 @media (max-width: $breakpoint-sp) {
+  // ヒーロービジュアル
   .hero {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     width: 100%;
     height: 310.5px;
     background: url(/images/KeyVisual-sp.jpg) center / cover no-repeat;
@@ -93,58 +148,244 @@
 
   .bg-overlay-image {
     position: absolute;
-    inset: 0;
+    top: 50%;
+    left: 50%;
+    width: 380.215px;
+    height: 304.172px;
+    flex-shrink: 0;
+    transform: translate(-50%, -50%);
     background: url(/images/img_top_dxoworld@2x.jpg) lightgray -29.236px -43.368px / 123.816% 116.569% no-repeat;
     opacity: 0.06;
     z-index: 3;
     pointer-events: none;
   }
 
+  //コピーライト
   .copy-wrap {
+    top: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90vw;
+    width: 100%;
     max-width: 100%;
     min-width: 0;
     padding: 0 5vw;
-    color:$text-white;
-    backdrop-filter: blur(5px);
+    color: var(--Style-Text-White, #FFF);
     box-sizing: border-box;
-    z-index: 10;
+    z-index: 4;
     background: transparent;
+    backdrop-filter: none;
   }
 
   .copy-main {
-    font-size: 18.122px;
-    color: $text-white;
-    text-align: center;
-    word-break: break-word;
+    display: none;
   }
-  .copy-sub {
-    font-size: 12px;
-    color: $text-white;
+
+  .copy-main-wave {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    word-break: break-word;
+    width: auto;
+    height: auto;
+    color: var(--Style-Text-White, #FFF);
+    -webkit-text-stroke-color: var(--Style-Text-White, #FFF);
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    line-height: 100%; /* 18.122px */
+    padding: 9.665px 14.498px;
+  }
+
+  .cha-c1, .cha-c3, .cha-c4, .cha-c6, .cha-c7, .cha-c8, .cha-c9, .cha-c10, .cha-c11 {
+    width: 19px;
+    height: 18px;
+  }
+
+  .cha-c1, .cha-c3, .cha-c4, .cha-c5, .cha-c6, .cha-c7, .cha-c8, .cha-c9, .cha-c10, .cha-c11, .cha-c12{
+    -webkit-text-stroke-width: 0.12px;
+    font-size: 18.122px;
+    font-weight: 300;
+    letter-spacing: 1.812px;
+  }
+
+  .copy-main-wave > .cha-c1,
+  .copy-main-wave > .cha-c2,
+  .copy-main-wave > .cha-c3,
+  .copy-main-wave > .cha-c4,
+  .copy-main-wave > .cha-c5,
+  .copy-main-wave > .cha-c6,
+  .copy-main-wave > .cha-c7,
+  .copy-main-wave > .cha-c8,
+  .copy-main-wave > .cha-c9,
+  .copy-main-wave > .cha-c10,
+  .copy-main-wave > .cha-c11,
+  .copy-main-wave > .cha-c12 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  // 見
+  .cha-c1 {
+    line-height: 1;
+    transform: translateY(0.5px);
+  }
+  // れば
+  .cha-c2 {
+    width: 32px;
+    height: 14px;
+    -webkit-text-stroke-width: 0.09px;
+    font-size: 14.498px;
+    font-weight: 350;
+    letter-spacing: 2.9px;
+    line-height: 1;
+    transform: translateY(-2.6px);
+    margin-right: 11.49px;
+  }
+  // わ
+  .cha-c3 {
+    transform: translateY(-2px);
+  }
+  // か
+  .cha-c4 {
+    line-height: 1;
+    transform: translateY(-2.5px);
+  }
+  // る、つ
+  .cha-c5 {
+    width: 58px;
+    height: 18px;
+    line-height: 1;
+    transform: translateY(0.7px);
+  }
+  // な
+  .cha-c6 {
+    line-height: 1;
+    transform: translateY(-0.7px);
+  }
+  // が
+  .cha-c7 {
+    line-height: 1;
+    transform: translateY(-1.1px);
+  }
+  // る、
+  .cha-c8 {
+    width: 39px;
+    height: 18px;
+    line-height: 1;
+    transform: translateY(0.7px);
+  }
+  // ひ
+    .cha-c9 {
+      line-height: 1;
+      transform: translateY(3px);
+  }
+  // ら
+    .cha-c10 {
+      line-height: 1;
+      transform: translateY(4px);
+  }
+  // め
+    .cha-c11 {
+      line-height: 1;
+      transform: translateY(1px);
+  }
+  // く。
+    .cha-c12 {
+    width: 39px;
+    height: 18px;
+    line-height: 1;
+    transform: translateY(-1.2px);
+  }
+  // 「
+  .copy-left-sp {
+    position: absolute;
+    width: 13.29px;
+    height: 16.914px;
+    left: 0px;
+    top: 0px;
+    stroke-width: 0.906px;
+    stroke: var(--Style-Text-White, #FFF);
+  }
+    // 」
+  .copy-right-sp {
+    position: absolute;
+    width: 13.29px;
+    height: 16.914px;
+    right: 0px;
+    bottom: 0px;
+    stroke-width: 0.906px;
+    stroke: var(--Style-Text-White, #FFF);
+  }
+
+  .copy-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--Style-Text-White, #FFF);
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: 1.2px;
   }
 }
 
 // 1280px以下のとき文字下げ
 @media (max-width: 1280px) {
   .copy-wrap {
-    width: 70%;
     height: 131px;
     bottom: -400px;
-    padding-left: 10px;
+    padding-left: 25px;
     white-space: nowrap;
+    gap: 20px;
+  }
+
+  .copy-main {
+    position: relative;
+    padding: 0 0;
+  }
+
+  .copy-left {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.5px;
+  height: 24.5px;
+  flex-shrink: 0;
+  left: -15px;
+  top: 25%;
+  fill: var(--Style-Text-Black, #434343);
+  transform: translateY(-50%);
+  }
+
+  .copy-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 18.5px;
+    height: 24.5px;
+    flex-shrink: 0;
+    right: 50px;
+    top: 90%;
+    fill: var(--Style-Text-Black, #434343);
+    overflow: visible;
+    transform: translateY(-50%);
   }
 }
 
-// $breakpoint-pcから$breakpoint-spの間hero右側を保持
-@media (max-width: $breakpoint-pc) and (min-width: #{ $breakpoint-sp + 1 }) {
+// 840pxから$breakpoint-spまで会社ロゴ保持
+@media (max-width: 840px) and (min-width: #{ $breakpoint-sp + 1 }) {
   .hero {
-    background-position: right -23px center;
+    background-position: right center;
+    background-size: cover;
   }
 }
