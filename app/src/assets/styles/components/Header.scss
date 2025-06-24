@@ -70,7 +70,7 @@
   font-family: "Hiragino Kaku Gothic ProN";
   font-size: 11px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 100%; /* 11px */
   letter-spacing: 0.55px;
   white-space: nowrap;
@@ -82,11 +82,11 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  color: $text-black;
+  color: var(--Style-Text-Black, #434343);
   font-family: 'Hiragino Kaku Gothic ProN';
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 160%;
 }
 
