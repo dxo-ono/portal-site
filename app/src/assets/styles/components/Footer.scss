@@ -3,7 +3,7 @@
 
 .footer {
   background: $Gradient-Dark;
-  color: $text-white;
+  color: var(--Style-Text-White, #FFF);
   list-style: none;
   padding: 20px 10px;
   width: 100%;
@@ -29,6 +29,7 @@
   align-items: center;
   flex-shrink: 0;
   aspect-ratio: 197/50;
+  background: url(/images/logo_yoko_en_textWhite1@2x.png) 50% / cover no-repeat;
 }
 
 .footer-columns {

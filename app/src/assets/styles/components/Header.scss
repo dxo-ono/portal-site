@@ -53,24 +53,25 @@
   width: 120px;
   justify-content: center;
   align-items: center;
-  // gap: 12px;
+  gap: 12px;
   flex-shrink: 0;
 }
 
-.logo-mark {
+.top-logo-mark {
   width: 38.988px;
   height: 40px;
   flex-shrink: 0;
   aspect-ratio: 38.99/40;
+  background: url(/images/logo_top_sp@2x.png) 50% / cover no-repeat;
 }
 
 .top-logo-text {
-  color: $text-black;
-  font-family: 'Hiragino Kaku Gothic ProN';
+  color: var(--Style-Text-Black, #434343);
+  font-family: "Hiragino Kaku Gothic ProN";
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 100%; /* 11px */
   letter-spacing: 0.55px;
   white-space: nowrap;
 }
