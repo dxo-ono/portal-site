@@ -120,46 +120,8 @@
   display: none;
 }
 
-@media (max-width: $breakpoint-sp) {
-  .header-nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    padding: 20px;
-    z-index: 100;
-  }
-
-  .header-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .header-nav.open {
-    display: flex;
-    width: 100%;
-    padding: 59px 0px 615px 0px;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-    flex-shrink: 0;
-    background: $text-white;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
-
-// 1024px以下480px以上
-@media (max-width: $breakpoint-pc) {
+// タブレット最小値以下
+@media (max-width: $breakpoint-tb) {
   .header-nav {
     display: none;
     flex-direction: column;
