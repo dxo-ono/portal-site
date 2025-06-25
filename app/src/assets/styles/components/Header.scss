@@ -95,7 +95,7 @@
   position: relative;
   color: $text-black;
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
 }
 
 .header-nav a::after {
@@ -104,8 +104,10 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: $gradient-underline;
+  align-items: center;
+  gap: 10px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
