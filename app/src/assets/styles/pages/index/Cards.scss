@@ -9,6 +9,7 @@
   padding: 0px 7.36px 0px 7.33px;
   justify-content: center;
   gap: 40.65px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -33,13 +34,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $text-black;
+  color: var(--Style-Text-Black, #434343);
   padding-top: 13px;
   padding-bottom: 13px;
+  font-family: "Hiragino Kaku Gothic ProN";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 30px; /* 150% */
 }
 
 .arrow {
@@ -62,6 +64,11 @@
     gap: 32px;
   }
 
+  .card-text {
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+  }
+
   .arrow {
     display: block;
     position: absolute;
@@ -70,20 +77,13 @@
   }
 }
 
-//カードつぶれる幅以下は折り返し
-@media (max-width: 1300px) {
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
+//カード画面幅に合わせて縮小
+@media (max-width: 395px){
   .card {
-    display: flex;
-    max-width: 368px;
+    width: 100%;
     height: auto;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 32px;
   }
 }
