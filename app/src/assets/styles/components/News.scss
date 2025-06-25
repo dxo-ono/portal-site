@@ -38,7 +38,17 @@
 .title-under-border {
   position: relative;
   width: 100%;
-  border-bottom: 2px solid $style-object-gray;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: $style-object-gray;
+    z-index: 1;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -46,8 +56,8 @@
     bottom: 0;
     width: 120px;
     height: 2px;
-    background: $gradient-underline;
-    z-index: 1;
+    background: var(--Gradient-Vivit, linear-gradient(90deg, var(--Mater-Sub-Green, #AADCB9) 0%, var(--Mater-Sub-Blue, #82BEF0) 50%, var(--Mater-Sub-Purple, #D2A5EB) 100%));
+    z-index: 2;
   }
 }
 
