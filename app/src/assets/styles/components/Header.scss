@@ -158,7 +158,7 @@
   }
 }
 
-// 1024px以下480px以上の場合もハンバーガーメニューに
+// 1024px以下480px以上
 @media (max-width: $breakpoint-pc) {
   .header-nav {
     display: none;
