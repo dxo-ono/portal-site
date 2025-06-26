@@ -71,7 +71,7 @@
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
-  line-height: 100%; /* 11px */
+  line-height: 100%;
   letter-spacing: 0.55px;
   white-space: nowrap;
 }
@@ -122,7 +122,7 @@
   display: none;
 }
 
-// タブレット最小値以下
+// タブレット
 @media (max-width: $breakpoint-tb) {
   .header-nav {
     display: none;

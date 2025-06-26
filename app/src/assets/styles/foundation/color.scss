@@ -18,8 +18,13 @@ $background-white: #ffffff;
 $style-object-gray: #c4c4c4;
 
 //グラデーション
-$border-top: linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
-// ↑ ↓ 同じかも
+$border-top: linear-gradient(
+  90deg,
+  #aadcb9 0%,
+  #82bef0 50%,
+  #d2a5eb 100%
+  );
+
 $Gradient-Vivid: linear-gradient(
   90deg,
   var(--Mater-Sub-Green, #aadcb9) 0%,
@@ -41,10 +46,7 @@ $gradient-underline: linear-gradient(
 );
 
 $Gradient-Dark: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.75) 0%,
-    rgba(0, 0, 0, 0.75) 100%
-  ),
+    0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%),
   linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
 
 $Gradient-hero: linear-gradient(

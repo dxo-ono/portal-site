@@ -3,19 +3,13 @@
 @use '../../foundation/color.scss' as *;
 @use '../../foundation/breakpoint.scss' as *;
 
-// ヒーロービジュアル
 .hero {
   position: relative;
   display: flex;
-  justify-content: flex-start;
   width: 100%;
   height: 561px;
-  background-color: #fff;
-  background-image: url(/images/KeyVisual@2x.png);
-  aspect-ratio: 16/9;
-  background-size: cover;
-  background-position: center;
-  white-space: nowrap;
+  flex-shrink: 0;
+  background: url(/images/KeyVisual@2x.png) lightgray 50% 62% / cover no-repeat;
 }
 
 // コピーライト
@@ -27,7 +21,7 @@
   flex-shrink: 0;
   width: 600px;
   height: 561px;
-  background: $gradient-white;
+  background: linear-gradient(90deg, #FAFAFA 0%, rgba(238, 238, 238, 0.00) 100%);
   backdrop-filter: blur(5px);
   gap: 50px;
 }
@@ -62,7 +56,7 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
-  line-height: 160%; /* 40px */
+  line-height: 160%;
   letter-spacing: 1.25px;
   min-width: 320px;
 }
@@ -111,8 +105,8 @@
   display: none;
 }
 
-// 1520px以下のとき文字下げ
-@media (max-width: 1520px) {
+// 1510px以下文字下げ
+@media (max-width: 1510px) {
   .copy-wrap {
     height: 131px;
     bottom: -400px;
@@ -157,7 +151,7 @@
   }
 }
 
-// $breakpoint-tbから$breakpoint-spまで会社ロゴ保持
+// $breakpoint-tbから$breakpoint-s
 @media (max-width: $breakpoint-tb) and (min-width: #{ $breakpoint-sp + 1 }) {
   .hero {
     background-position: right center;
@@ -165,7 +159,7 @@
   }
 }
 
-// 700px以下 .copy見せる
+// 700px以下
 @media (max-width: 700px) {
   .copy-wrap {
     gap: 36px;

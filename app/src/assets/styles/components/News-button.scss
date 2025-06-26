@@ -15,7 +15,8 @@
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0.25px;
-  background: $gradient-button;
+  border-radius: 8px;
+  background: var(--Gradient-Vivid, linear-gradient(90deg, var(--Mater-Sub-Green, #AADCB9) 0%, var(--Mater-Sub-Blue, #82BEF0) 50%, var(--Mater-Sub-Purple, #D2A5EB) 100%));
   border-radius: 8px;
   border: none;
   padding: 10px;
@@ -42,6 +43,6 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px; /* 150% */
+    line-height: 30px;
   }
 }
