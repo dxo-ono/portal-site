@@ -27,8 +27,10 @@
 }
 
 .card-link {
+  position: relative;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .card img {
@@ -37,7 +39,7 @@
 }
 
 .card-link-report {
-  transform: scale(1.03);
+  transform: scale(1.01) translateY(-2px);
 }
 
 .card-img3 {
@@ -51,6 +53,9 @@
 }
 
 .card-text {
+  position: relative;
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +68,8 @@
   font-weight: 600;
   line-height: 30px;
   background: rgba(255, 255, 255, 0.00);
-  box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.16)
+  box-shadow: 0px -1px 6px 0px rgba(0, 0, 0, 0.16);
+  z-index: 2;
 }
 
 .arrow {
@@ -88,7 +94,8 @@
 
   .card-text {
     font-size: 16px;
-    line-height: 24px; /* 150% */
+    line-height: 30px;
+    width: 100%;
   }
 
   .arrow {
