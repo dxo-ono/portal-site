@@ -1,11 +1,11 @@
 // 色の定義
 
 // 色
-$Mater-Sub-Purple: #D2A5EB;
-$Mater-Su-Blue: #82BEF0;
+$Mater-Sub-Purple: #d2a5eb;
+$Mater-Sub-Blue: #82bef0;
+$Mater-Sub-Green: #aadcb9;
 
-$style-object-gray : #C4C4C4;
-
+$style-object-gray: #c4c4c4;
 
 // テキスト
 $text-black: #434343;
@@ -19,6 +19,13 @@ $style-object-gray: #c4c4c4;
 
 //グラデーション
 $border-top: linear-gradient(90deg, #aadcb9 0%, #82bef0 50%, #d2a5eb 100%);
+// ↑ ↓ 同じかも
+$Gradient-Vivid: linear-gradient(
+  90deg,
+  var(--Mater-Sub-Green, #aadcb9) 0%,
+  var(--Mater-Sub-Blue, #82bef0) 50%,
+  var(--Mater-Sub-Purple, #d2a5eb) 100%
+);
 
 $gradient-white: linear-gradient(
   90deg,

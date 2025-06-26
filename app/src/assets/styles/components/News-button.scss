@@ -23,25 +23,25 @@
 }
 
 // スマホ
-@media (max-width: $breakpoint-sp){
+@media (max-width: $breakpoint-sp) {
   .news-button-container {
     width: 100%;
   }
 
   .news-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  width: 100%;
-  height: auto;
-  padding: 17px 100px;
-  align-items: flex-start;
-  color: #FFF;
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px; /* 150% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    padding: 17px 100px;
+    align-items: flex-start;
+    color: #fff;
+    font-family: 'Hiragino Kaku Gothic ProN';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
   }
 }

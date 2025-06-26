@@ -3,7 +3,7 @@
 
 .footer {
   background: $Gradient-Dark;
-  color: var(--Style-Text-White, #FFF);
+  color: var(--Style-Text-White, #fff);
   list-style: none;
   padding: 20px 10px;
   width: 100%;
@@ -65,39 +65,12 @@
   }
 }
 
-//スマホ
-@media (max-width: $breakpoint-sp) {
-  .footer-container {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .footer-columns {
-    // flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .footer-column {
-    width: 100%;
-  }
-
-  .footer-submenu {
-    padding-left: 0;
-  }
-
-  .footer-submenu li {
-    padding-left: 1rem;
-  }
-}
-
 //タブレット
 @media (max-width: $breakpoint-tb) {
   .footer-container {
     flex-direction: column;
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
   }
 
   .footer-columns {
@@ -109,6 +82,33 @@
   .footer-column {
     flex-wrap: wrap;
     width: 240px;
+  }
+
+  .footer-submenu {
+    padding-left: 0;
+  }
+
+  .footer-submenu li {
+    padding-left: 1rem;
+  }
+}
+
+//スマホ
+@media (max-width: $breakpoint-sp) {
+  .footer-container {
+    flex-direction: column;
+    // padding: 20px;
+    gap: 20px;
+  }
+
+  .footer-columns {
+    align-items: center;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .footer-column {
+    width: 100%;
   }
 
   .footer-submenu {

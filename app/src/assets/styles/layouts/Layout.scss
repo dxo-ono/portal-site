@@ -13,9 +13,9 @@
   margin-bottom: 80px;
 }
 // スマホ
-@media (max-width: $breakpoint-sp){
+@media (max-width: $breakpoint-sp) {
   .hero {
-  margin-bottom: 42px;
+    margin-bottom: 42px;
   }
 }
 
@@ -27,8 +27,8 @@
   margin-bottom: 107px;
 }
 // スマホ
-@media (max-width: $breakpoint-sp){
-  .news-button-container{
+@media (max-width: $breakpoint-sp) {
+  .news-button-container {
     margin-bottom: 72px;
   }
 }

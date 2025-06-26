@@ -105,15 +105,83 @@
   margin-left: 120px;
   color: var(--Style-Text-Black, #434343);
   margin-left: 120px;
-  }
+}
 
 .hero::before {
   display: none;
 }
 
+// 1520px以下のとき文字下げ
+@media (max-width: 1520px) {
+  .copy-wrap {
+    height: 131px;
+    bottom: -400px;
+    padding-left: 25px;
+    white-space: nowrap;
+    gap: 36px;
+  }
+
+  .copy-inner {
+    margin-left: 90px;
+  }
+
+  .copy-left {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.5px;
+    height: 24.5px;
+    left: -7px;
+    top: 0px;
+  }
+
+  .copy-main {
+    position: relative;
+    padding: 0 2%;
+  }
+
+  .copy-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 18.5px;
+    height: 24.5px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .copy-sub {
+    margin-left: 90px;
+  }
+}
+
+// $breakpoint-tbから$breakpoint-spまで会社ロゴ保持
+@media (max-width: $breakpoint-tb) and (min-width: #{ $breakpoint-sp + 1 }) {
+  .hero {
+    background-position: right center;
+    background-size: cover;
+  }
+}
+
+// 700px以下 .copy見せる
+@media (max-width: 700px) {
+  .copy-wrap {
+    gap: 36px;
+  }
+
+  .copy-inner {
+    margin: 0 0;
+  }
+
+  .copy-sub {
+    margin: 0 0;
+  }
+}
+
 // スマホ
 @media (max-width: $breakpoint-sp) {
-  // ヒーロービジュアル
   .hero {
     position: relative;
     display: flex;
@@ -199,7 +267,7 @@
     -webkit-text-stroke-color: var(--Style-Text-White, #fff);
     font-family: 'Noto Sans JP';
     font-style: normal;
-    line-height: 100%; /* 18.122px */
+    line-height: 100%;
     padding: 9.665px 14.498px;
   }
 
@@ -363,77 +431,7 @@
   }
 }
 
-// 1520px以下のとき文字下げ
-@media (max-width: 1520px) {
-  .copy-wrap {
-    height: 131px;
-    bottom: -400px;
-    padding-left: 25px;
-    white-space: nowrap;
-    gap: 36px;
-  }
-
-  .copy-inner {
-    margin-left: 90px;
-  }
-
-  .copy-left {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 18.5px;
-    height: 24.5px;
-    left: 0px;
-    top: 0px;
-  }
-
-  .copy-main {
-    position: relative;
-    padding: 0 2%;
-  }
-
-  .copy-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 18.5px;
-    height: 24.5px;
-    right: 0px;
-    bottom: 0px;
-  }
-
-  .copy-sub {
-    margin-left: 90px;
-  }
-}
-
-// $breakpoint-tbから$breakpoint-spまで会社ロゴ保持
-@media (max-width: $breakpoint-tb) and (min-width: #{ $breakpoint-sp + 1 }) {
-  .hero {
-    background-position: right center;
-    background-size: cover;
-  }
-}
-
-// 700px以下 .copy見せる
-@media (max-width: 700px){
-
-  .copy-wrap {
-    gap: 36px;
-  }
-
-   .copy-inner {
-    margin: 0 0;
-  }
-
-  .copy-sub {
-    margin: 0 0;
-  }
-}
-
-// 最小値ひらめくだけ2段目
+// 最小値
 @media (max-width: $breakpoint-xs) {
   .copy-wrap {
     width: 95vw;
@@ -457,12 +455,11 @@
     white-space: normal;
   }
 
-  /* 「ひらめく。」だけ2段目に */
   .cha-c9 {
     display: block;
     margin-top: 8px;
-    // width: 100%;
   }
+
   .cha-c10,
   .cha-c11,
   .cha-c12 {
@@ -471,7 +468,6 @@
     margin: 0;
   }
 
-  /* 他の文字は1段目に横並び */
   .copy-main-wave > :not(.cha-c9):not(.cha-c10):not(.cha-c11):not(.cha-c12) {
     display: inline;
   }
