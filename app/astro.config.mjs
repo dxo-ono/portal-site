@@ -4,8 +4,9 @@ import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com', // Your site name
+  site: 'https://dxo-ono.github.io/portal-site', // Your site name
   build: {
+    outDir: 'docs',
     assets: 'static/',
     inlineStylesheets: 'never',
   },
