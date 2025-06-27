@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap'
 export default defineConfig({
   site: 'https://dxo-ono.github.io/portal-site', // Your site name
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     assets: 'static/',
     inlineStylesheets: 'never',
   },
