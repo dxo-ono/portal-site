@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && rm -rf dist/sitemap",
+    "build": "astro build && rm -rf docs/sitemap",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write ."
