@@ -11,6 +11,7 @@ export default defineConfig({
     inlineStylesheets: 'never',
   },
   vite: {
+    base: '/portal-site/',
     server: {
       watch: {
         usePolling: true,
