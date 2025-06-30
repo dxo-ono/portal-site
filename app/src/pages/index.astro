@@ -62,9 +62,6 @@ import Layout from '../layouts/Layout.astro'
     </div>
   </div>
 
-
-<div class="test">てすと</div>
-
   <!-- お知らせ -->
   <main class="main-content">
     <div class="news">
@@ -165,37 +162,36 @@ import Layout from '../layouts/Layout.astro'
     <div class="card-container">
       <div class="card">
         <a href="社員紹介ページリンク" class="card-link">
-          <img src="/images/member@2x.png" alt="社員紹介の画像" />
+          <img src={`${Astro.site.pathname}images/member@2x.png`} alt="社員紹介の画像" />
           <div class="card-text">社員紹介</div>
           <span class="arrow">
-            <img src="../images/pseudo.png" alt="矢印の画像" />
+           <img src={`${Astro.site.pathname}images/pseudo.png`} alt="矢印の画像" />
           </span>
         </a>
       </div>
       <div class="card">
         <a href="社内報ページリンク" class="card-link">
           <img
-            src="/images/report@2x.jpg"
+            src={`${Astro.site.pathname}images/report@2x.jpg`}
             alt="社内報の画像"
             class="card-link-report"
           />
-
           <div class="card-text">社内報</div>
           <span class="arrow">
-            <img src="../images/pseudo.png" alt="矢印の画像" />
+            <img src={`${Astro.site.pathname}images/pseudo.png`} alt="矢印の画像" />
           </span>
         </a>
       </div>
       <div class="card">
         <a href="DXOポータルページリンク" class="card-link">
           <img
-            src="/images/logo@2x.png"
+            src={`${Astro.site.pathname}images/logo@2x.png`}
             alt="DXO株式会社ポータルの画像"
             class="card-img3"
           />
           <div class="card-text">DXO株式会社ポータルとは</div>
           <span class="arrow">
-            <img src="../images/pseudo.png" alt="矢印の画像" />
+            <img src={`${Astro.site.pathname}images/pseudo.png`} alt="矢印の画像" />
           </span>
         </a>
       </div>

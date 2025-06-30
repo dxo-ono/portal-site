@@ -4,8 +4,11 @@ import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com', // Your site name
+  // site: 'https://example.com', // Your site name 設定前(htmlのみ反映)
+  site: 'https://dxo-ono.github.io/portal-site',
+  base: '/portal-site/', // 追記 設定前(htmlのみ反映)は記述なし
   build: {
+    outDir: 'docs',
     assets: 'static/',
     inlineStylesheets: 'never',
   },

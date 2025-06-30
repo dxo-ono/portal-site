@@ -14,7 +14,8 @@ import Footer from '../components/Footer.astro'
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> 修正前-->
+    <link rel="stylesheet" href={`${Astro.site.pathname}css/style.css`} />
     <title>DXO株式会社</title>
   </head>
 
@@ -27,5 +28,6 @@ import Footer from '../components/Footer.astro'
       <Footer />
     </div>
   </body>
-  <script src="../../public/js/common.js"></script>
+  <!-- <script src="../../public/js/common.js"></script> 修正前-->
+   <script src={`${Astro.site.pathname}js/common.js`}></script>
 </html>
